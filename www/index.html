@@ -1,20 +1,52 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/ncmb.min.js"></script>
-    <script src="components/loader.js"></script>
-    <script>
-        // Add your code here
-    </script>
-</head>
-<body>
-
-    <p>test</p>
-
-</body>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/ncmb.min.js"></script>
+  <script src="components/loader.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ </head>
+ <body>
+  <textarea placeholder="メモ欄" rows="20"></textarea>
+  <table rules="all">
+   <tr>
+    <td colspan="4"><input type="text" id="res" placeholder="0" style="border:none; font-size:24pt; text-align:right;"></td>
+   </tr>
+   <tr>
+    <td><button onClick="cle()">AC</button></td>
+    <td><button onClick="inc()"><font size="3px">税込</font></button></td>
+    <td><button onClick="tax()"><font size="3px">消費</font></button></td>
+    <td><button onClick="red()"><font size="3px">軽税</font></button></td>
+   </tr>
+   <tr>
+    <td><button onClick="dis(7)">７</button></td>
+    <td><button onClick="dis(8)">８</button></td>
+    <td><button onClick="dis(9)">９</button></td>
+    <td><button onClick="dis('/')">÷</button></td>
+   </tr>
+   <tr>
+    <td><button onClick="dis(4)">４</button></td>
+    <td><button onClick="dis(5)">５</button></td>
+    <td><button onClick="dis(6)">６</button></td>
+    <td><button onClick="dis('*')">×</button></td>
+   </tr>
+   <tr>
+    <td><button onClick="dis(1)">１</button></td>
+    <td><button onClick="dis(2)">２</button></td>
+    <td><button onClick="dis(3)">３</button></td>
+    <td><button onClick="dis('-')">－</button></td>
+   </tr>
+   <tr>
+    <td><button onClick="dis(0)">０</button></td>
+    <td><button onClick="dis('.')">.</button></td>
+    <td><button onClick="equ()">＝</button></td>
+    <td><button onClick="dis('+')">＋</button></td>
+   </tr>
+  </table>
+ </body>
 </html>
