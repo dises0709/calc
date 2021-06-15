@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  </head>
  <body>
+  <div id="wrap">
   <textarea placeholder="メモ欄" rows="20"></textarea>
   <table rules="all">
    <tr>
@@ -19,9 +20,9 @@
    </tr>
    <tr>
     <td><button onClick="cle()">AC</button></td>
-    <td><button onClick="inc()"><font size="3px">税込</font></button></td>
-    <td><button onClick="tax()"><font size="3px">消費</font></button></td>
-    <td><button onClick="red()"><font size="3px">軽税</font></button></td>
+    <td><button onClick="inc()" style="font-size:12pt; font-weight:900;">税込<br>+10%</button></td>
+    <td><button onClick="tax()" style="font-size:12pt; font-weight:900;">消費税<br>-90%</button></td>
+    <td><button onClick="red()" style="font-size:12pt; font-weight:900;">軽税<br>+8%</button></td>
    </tr>
    <tr>
     <td><button onClick="dis(7)">７</button></td>
@@ -48,5 +49,6 @@
     <td><button onClick="dis('+')">＋</button></td>
    </tr>
   </table>
+  </div>
  </body>
 </html>

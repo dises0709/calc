@@ -3,8 +3,6 @@
 function dis(n){
  var num = document.getElementById("res");
  num.value += n;
- var mem = document.getElementById("mem");
- mem.value += n;
 }
 
 function mem(){
@@ -20,8 +18,6 @@ function cle(){
 function equ(){
  var num = document.getElementById("res");
  num.value = eval(num.value);
- var equ = document.getElementById("equ");
- equ.value = '=' + eval(num.value);
 }
 
 function inc(){
